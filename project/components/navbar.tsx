@@ -26,7 +26,6 @@ export function Navbar() {
         <div className="flex justify-between items-center">
           <Link href="/" className="text-xl font-bold flex items-center gap-2">
             <AiOutlineHome className="w-5 h-5" />
-            Portfolio
           </Link>
 
           {/* Mobile menu button */}
