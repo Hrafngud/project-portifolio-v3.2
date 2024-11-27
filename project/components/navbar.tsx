@@ -5,6 +5,8 @@ import { ThemeToggle } from "./theme-toggle";
 import { LanguageSwitch } from "./language-switch";
 import { useLanguage } from "@/context/language-context";
 import { dictionary } from "@/lib/dictionary";
+import { AiOutlineHome } from 'react-icons/ai';
+
 
 export function Navbar() {
   const { language } = useLanguage();
@@ -18,10 +20,10 @@ export function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/25 backdrop-blur-lg border-b">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        <Link href="/" className="text-xl font-bold">
-          Portfolio
-        </Link>
-        
+
+   <Link href="/" className="text-xl font-bold flex items-center">
+     <AiOutlineHome className="mr-2" />
+   </Link>        
         <nav className="flex-1 ml-8">
           <ul className="flex gap-8">
             <li>
